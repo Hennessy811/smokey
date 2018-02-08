@@ -1,0 +1,16 @@
+{
+  "name": "slim_smokey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.14.12",
+    "slimbot": "^0.7.10",
+    "telebot": "^1.2.3"
+  }
+}

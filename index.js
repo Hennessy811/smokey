@@ -110,9 +110,14 @@ bot.on('/uninfo', (msg) => {
 });
 
 bot.on('/itstimetosmoke', (msg) => {
-    for (let i = 0; i < smoke.length; i++) {
-        bot.sendMessage(smoke[i], 'Пора идти курить!');
+    if (smoke.includes(String(msg.from.id))) {
+        for (let i = 0; i < smoke.length; i++) {
+            bot.sendMessage(smoke[i], 'Пора идти курить!');
+        }
+    } else {
+        return msg.reply.text("Ты не в списке!")
     }
+
 });
 
 bot.start();
